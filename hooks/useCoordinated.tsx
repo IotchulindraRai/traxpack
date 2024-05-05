@@ -7,7 +7,7 @@ export default function useCoordinated() {
     const [Longitude, setLongitude] = useState<{lat: number;}[]>([]);
     useEffect(() => {
 
-        axios.get("http://localhost:8080/random-coordinates")
+        axios.get(`${process.env.NEXT_PUBLIC_BACKEND_URL}/random-coordinates`)
         .then((response)=>{
             console.log(response.data.lat, response.data.lng);
             setLatitude(response.data.lat);
