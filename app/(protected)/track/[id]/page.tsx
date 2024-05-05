@@ -6,7 +6,7 @@ export default function Page() {
 
     const { id } = useParams();
     return (
-        <div className="">
+        <div>
             <Track params={{id:String(id)}} />
         </div>
     )
