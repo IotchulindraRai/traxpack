@@ -73,10 +73,9 @@ const SettingsPage = () => {
             <CardContent>
                 <Form {...form}>
                     <form
-                    className="space-y-6"
                     onSubmit={form.handleSubmit(onSubmit)}
                     >
-                        <div className="space-y-4">
+                        <div className="-space-y-0.5">
                             <FormField
                             control={form.control}
                             name="name"
