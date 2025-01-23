@@ -3,25 +3,24 @@ import { GeistSans } from "geist/font/sans";
 import { SessionProvider } from "next-auth/react";
 import { Toaster } from "sonner";
 
-
 import { cn } from "@/lib/utils";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import NavigationBar from "@/components/Navbar"; // Renamed Navbar to NavigationBar
 
-export const metadata: Metadata = {
-  title: "TraxPack",
-  description: "Your Luggage, Your Way",
-  icons:{
+export const pageMetadata: Metadata = {
+  title: "TraxPack - Luggage Tracking Simplified",
+  description: "Keep track of your luggage with ease, wherever you go.",
+  icons: {
     icon: [
       {
-        url: "/logo.svg",
-        href: "/logo.svg"
+        url: "/assets/logo.svg", // Changed logo path to assets folder for clarity
+        href: "/assets/logo.svg",
       },
-    ]
-  }
+    ],
+  },
 };
 
-export default function RootLayout({
+export default function MainLayout({
   children,
 }: {
   children: React.ReactNode;
@@ -31,12 +30,12 @@ export default function RootLayout({
       <html lang="en" className="light">
         <body
           className={cn(
-            "grainy flex min-h-screen flex-col font-sans antialiased text-black",
+            "grainy flex min-h-screen flex-col font-sans antialiased text-black bg-light", // Added bg-light for clarity
             GeistSans.className,
           )}
         >
           <Toaster />
-          <Navbar />
+          <NavigationBar /> {/* Renamed Navbar to NavigationBar */}
           {children}
         </body>
       </html>
