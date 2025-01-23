@@ -1,4 +1,4 @@
-AWS Luggage Tracking Integrating IoT is our final year project completed during my university. It is designed to offer a real-time, efficient, and secure solution for tracking luggage in the aviation industry using the power of Internet of Things (IoT) technology and AWS cloud services. I want to specially thank my team for their immense contributions, especially Ajay for his dedication and hard work on this project.
+AWS Luggage Tracking Integrating IoT is our final year project completed during my university. It is designed to offer a real-time, efficient, and secure solution for tracking luggage in the aviation industry using the power of Internet of Things (IoT) technology and AWS cloud services. I want to specially thank my team for their immense contributions, especially **Ajay** for his dedication and hard work on this project.
 
 This is a Landing Page template for [Next.js](https://nextjs.org/) 14 App Router.
 
